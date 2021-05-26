@@ -1,7 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import CounterApp from "./CounterApp";
+// import PrimeraApp from "./PrimeraApp";
 
-const saludo = <h1>Hola mundo</h1>;
+// Importacion de estilos
+import "./index.css";
+
 const rootDiv = document.querySelector("#root");
 
-ReactDOM.render(saludo, rootDiv);
+ReactDOM.render(<CounterApp value={100} />, rootDiv);
